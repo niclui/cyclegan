@@ -19,10 +19,11 @@ def prepare_image_df(horse_dataset_folder_path, zebra_dataset_folder_path):
     return horse_image_df, zebra_image_df
 
 if __name__ == '__main__':
-    # usage: process_data.py [horse_dataset_folder_path] [zebra_dataset_folder_path] [output_csv_name]
+    # usage: process_data.py [horse_dataset_folder_path] [zebra_dataset_folder_path] [output_csv_path]
     horse_path = sys.argv[1]
     zebra_path = sys.argv[2]
     output_csv_path = sys.argv[3]
+    
 
     if not os.path.exists(output_csv_path):
         os.makedirs(output_csv_path)
