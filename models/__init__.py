@@ -2,6 +2,7 @@ import argparse
 
 from util import Args
 from .classification import *
+from .cycle_gan import *
 from .segmentation import *
 from .detection import *
 
